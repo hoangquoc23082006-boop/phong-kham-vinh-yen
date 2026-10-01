@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phòng Khám Đa Khoa Vĩnh Yên</title>
+  <meta name="description" content="Phòng Khám Đa Khoa Vĩnh Yên - tư vấn, đặt lịch và hỗ trợ nhanh qua hotline 0912 267 600." />
+  <style>
+    :root{
+      --blue:#0b5fc6;
+      --blue2:#0b8fe8;
+      --light:#eef7ff;
+      --green:#16a34a;
+      --text:#17324d;
+      --muted:#6b7f93;
+      --white:#fff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:linear-gradient(180deg,#f8fcff 0%,#eef7ff 100%);
+      color:var(--text);
+    }
+    .wrap{max-width:1080px;margin:auto;padding:0 18px}
+    header{
+      background:linear-gradient(135deg,var(--blue),var(--blue2));
+      color:white;
+      padding:18px 0;
+      position:sticky;top:0;z-index:20;
+      box-shadow:0 8px 28px rgba(0,0,0,.12);
+    }
+    .head{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap
+    }
+    .brand h1{margin:0;font-size:26px;line-height:1.15}
+    .brand p{margin:6px 0 0;opacity:.9;font-size:14px}
+    .call-mini{
+      background:#fff;color:var(--blue);padding:11px 16px;border-radius:999px;
+      text-decoration:none;font-weight:700;white-space:nowrap
+    }
+    .hero{padding:54px 0 34px}
+    .hero-grid{
+      display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center
+    }
+    .tag{
+      display:inline-block;background:#dff0ff;color:var(--blue);padding:7px 12px;
+      border-radius:999px;font-weight:700;font-size:14px
+    }
+    h2{font-size:46px;line-height:1.08;margin:16px 0 16px;color:#0c3f78}
+    .lead{font-size:19px;line-height:1.6;color:#50677e;margin-bottom:24px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:15px 22px;border-radius:14px;text-decoration:none;font-weight:800;
+      box-shadow:0 10px 24px rgba(11,95,198,.18)
+    }
+    .btn-primary{background:var(--green);color:#fff}
+    .btn-secondary{background:#fff;color:var(--blue);border:2px solid #cde5ff}
+    .hero-card{
+      background:white;border-radius:24px;padding:28px;box-shadow:0 18px 50px rgba(16,82,145,.14);
+      border:1px solid #e5f2ff
+    }
+    .hero-card h3{margin-top:0;color:var(--blue);font-size:24px}
+    .hero-card ul{margin:0;padding-left:20px;line-height:1.9;color:#4b6279}
+    section{padding:34px 0}
+    .section-title{text-align:center;margin-bottom:24px}
+    .section-title h3{font-size:32px;margin:0 0 8px;color:#0c3f78}
+    .section-title p{margin:0;color:var(--muted)}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{
+      background:white;border-radius:20px;padding:22px;border:1px solid #e1effb;
+      box-shadow:0 12px 35px rgba(16,82,145,.08)
+    }
+    .card .icon{font-size:34px}
+    .card h4{font-size:21px;margin:12px 0 8px;color:#0c4f91}
+    .card p{margin:0;color:#63778a;line-height:1.6}
+    .notice{
+      background:linear-gradient(135deg,#eaf6ff,#f7fbff);
+      border:1px solid #cae7ff;border-radius:22px;padding:24px
+    }
+    .notice h4{margin:0 0 10px;color:#0c4f91;font-size:24px}
+    .notice p{margin:0;color:#5f7487;line-height:1.7}
+    .cta{
+      margin:24px 0 52px;
+      background:linear-gradient(135deg,#0b5fc6,#0b8fe8);
+      color:white;border-radius:26px;padding:30px;text-align:center
+    }
+    .cta h3{margin:0 0 8px;font-size:30px}
+    .cta p{margin:0 0 20px;opacity:.92}
+    footer{
+      background:#0a315a;color:white;padding:26px 0 34px;text-align:center
+    }
+    footer p{margin:6px 0;opacity:.92}
+    .floating{
+      position:fixed;right:18px;bottom:18px;z-index:30;
+      background:var(--green);color:#fff;text-decoration:none;font-weight:800;
+      padding:14px 18px;border-radius:999px;box-shadow:0 14px 30px rgba(0,0,0,.22)
+    }
+    @media (max-width:820px){
+      .hero-grid{grid-template-columns:1fr}
+      h2{font-size:36px}
+      .grid3{grid-template-columns:1fr}
+      .brand h1{font-size:21px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap head">
+      <div class="brand">
+        <h1>PHÒNG KHÁM ĐA KHOA VĨNH YÊN</h1>
+        <p>Vĩnh Yên, Vĩnh Phúc • Tư vấn & hỗ trợ đặt lịch</p>
+      </div>
+      <a class="call-mini" href="tel:0912267600">📞 0912 267 600</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="tag">Tư vấn riêng tư • Hỗ trợ nhanh</span>
+          <h2>Chủ động kiểm tra sức khỏe, an tâm hơn mỗi ngày</h2>
+          <p class="lead">
+            Phòng Khám Đa Khoa Vĩnh Yên hỗ trợ tư vấn, đặt lịch và hướng dẫn trước khi đến khám.
+            Thông tin cá nhân được tôn trọng và bảo mật.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="tel:0912267600">📞 Gọi ngay 0912 267 600</a>
+            <a class="btn btn-secondary" href="#dichvu">Xem dịch vụ</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Hỗ trợ nhanh trước khi đến khám</h3>
+          <ul>
+            <li>Tư vấn nhu cầu thăm khám phù hợp</li>
+            <li>Hỗ trợ sắp xếp lịch khám</li>
+            <li>Chủ động thời gian, hạn chế chờ đợi</li>
+            <li>Trao đổi riêng tư, kín đáo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="dichvu">
+      <div class="wrap">
+        <div class="section-title">
+          <h3>Dịch vụ thăm khám</h3>
+          <p>Hỗ trợ tư vấn theo từng nhu cầu cụ thể</p>
+        </div>
+        <div class="grid3">
+          <div class="card">
+            <div class="icon">👨‍⚕️</div>
+            <h4>Nam khoa</h4>
+            <p>Tư vấn và kiểm tra các vấn đề sức khỏe nam giới, viêm nhiễm và nhu cầu thăm khám liên quan.</p>
+          </div>
+          <div class="card">
+            <div class="icon">👩‍⚕️</div>
+            <h4>Phụ khoa</h4>
+            <p>Hỗ trợ kiểm tra sức khỏe phụ khoa, tư vấn các dấu hiệu bất thường và chăm sóc định kỳ.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🩺</div>
+            <h4>Hậu môn – Trĩ</h4>
+            <p>Thăm khám các vấn đề hậu môn – trực tràng, tư vấn phương án xử lý phù hợp theo tình trạng.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="notice">
+          <h4>Trước khi đến khám</h4>
+          <p>
+            Bạn có thể gọi trước để được hướng dẫn về thời gian, quy trình và các giấy tờ cần thiết.
+            Không tự ý dùng thuốc hoặc trì hoãn thăm khám khi có triệu chứng bất thường kéo dài.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="cta">
+        <h3>Cần hỗ trợ đặt lịch?</h3>
+        <p>Gọi trực tiếp để được hướng dẫn nhanh.</p>
+        <a class="btn btn-primary" href="tel:0912267600">📞 0912 267 600</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>PHÒNG KHÁM ĐA KHOA VĨNH YÊN</strong></p>
+      <p>Vĩnh Yên, Vĩnh Phúc</p>
+      <p>Hotline: <strong>0912 267 600</strong></p>
+    </div>
+  </footer>
+
+  <a class="floating" href="tel:0912267600">📞 Gọi Hotline</a>
+</body>
+</html>
